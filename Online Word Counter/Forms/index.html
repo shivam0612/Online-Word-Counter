@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Word Counter</title>
+    <link rel="stylesheet" href="../Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../Css/style.css">
+
+</head>
+
+<body>
+    <div>
+        <h3 class="pb-3 title">Online Word Counter</h3>
+        <marquee behavior="alternate" scrollamount="10">Please write proper Sentence or Paragraphs</marquee>
+        <textarea cols="100" rows="12" id="data"></textarea>
+        <p></p>
+        <p id="showchars"></p><br>
+        <p id="showwords"></p><br>
+        <p id="showsentence"></p><br>
+        <p id="showpara"></p><br>
+        <p id="rw"></p>
+        <span><button class="btn btn-outline-light bg-success" onclick="count()">Count</button>
+            <button class="btn btn-outline-light bg-danger" style="margin-left: 10em;" onclick="clr()">Clear</button></span>
+    </div>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <script src="../Js/script.js"></script>
+    <script src="../Bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../Bootstrap/bootstrap.min.js"></script>
+</body>
+
+</html>

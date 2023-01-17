@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100vw;
+    /* background-color: #a5f57788; */
+}
+
+div {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+textarea {
+    border: 2px solid blueviolet;
+    box-shadow: 5px 3px 6px black;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+button {
+    width: 10em;
+    box-shadow: 5px 3px 6px black;
+    font-weight: 800;
+    color: black;
+    background-color: lightcoral;
+}
+
+
+.title {
+    font-size: 50px;
+    text-shadow: 3px 0px 2px black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+marquee {
+    width: 30%;
+    font-size: large;
+    padding-bottom: 5px;
+    font-family: cursive;
+}
+
+.bg {
+    animation: slide 10s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, rgba(255, 184, 238, 0.425) 50%, rgba(225, 255, 117, 0.212) 50%);
+    bottom: 0;
+    left: -50%;
+    opacity: .7;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    z-index: -1;
+}
+
+.bg2 {
+    animation-direction: alternate-reverse;
+    animation-duration: 10s;
+}
+
+.bg3 {
+    animation-duration: 10s;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(25%);
+    }
+}
